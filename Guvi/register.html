@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/register.css">
+        <title> Registration Form</title>
+    </head>
+    <body>
+        <form action="php/register.php" method="post">
+        <h3> REGISTRATION FORM</h3>
+        <p> Kindly fill this form to register</p>
+            <div class="container">
+        <lable for="fname"> <b>First Name: </b></lable>
+           <input type="text" placeholder=" Enter your firstname " name="fname" id="fname" required>
+        <lable for="lname"><b>Last Name: </b></lable>
+          <input type="text" placeholder="Enter your lastname" name="lname" id="lname" required>
+        <lable for="rollnum"> <b>Roll Number:</b></lable>
+           <input type="numbers" placeholder="Enter your rollnumber" name="rollnum" id="rollnum" required>
+        <lable for="dob"><b>Date Of Birth:</b></lable>
+           <input type="Date" placeholder="MM/DD/YEAR" name="dob" id="dob"required>
+        <lable for="gender"><b>SelectGender:</b></lable>
+        <select id="gender" name="gender" size="1" required>
+           <option value="male">MALE</option>
+           <option value="female">FEMALE</option>
+           </select><br>
+        <lable for="email"> <b>Email:</b></lable>
+           <input type="text" placeholder="Enter Email" name="email" id="email" required>
+         <lable for="pwd"> <b>Password:</b></lable>
+           <input type="password" placeholder="Enter password" name="pwd" id="pwd" required>
+        <lable for="rpwd"> <b>Repeat password</b></lable>
+            <input type="password" placeholder="Repeat password" name="rpwd" id="rpwd">
+        <button type="submit" >Register</button>
+        <div>
+            <p> Already have an account?<a  href="login.html">Log in</a></p>
+        </div>
+        </form>
+    </body>
+</html>
